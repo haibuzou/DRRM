@@ -1,0 +1,33 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/.gradle
+/.idea
+app/build
+app/patchtool
+app/src/main/jniLibs/x86
+/build
+
+# IntelliJ files
+*.iml
+# Local configuration file (sdk path, etc)
+local.properties
+# Generated files
+bin/
+gen/
+# Java class files
+*.class
+
+# Gradle files
+.gradle/
+build/
+
+# Misc
+.DS_Store
+Thumbs.db
