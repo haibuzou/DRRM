@@ -20,6 +20,7 @@ public class Main2Activity extends AppCompatActivity implements MainMvpView{
     @Inject
     MainPresenter mainPresenter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
