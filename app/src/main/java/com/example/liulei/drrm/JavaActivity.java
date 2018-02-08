@@ -26,6 +26,7 @@ public class JavaActivity extends AppCompatActivity implements MainMvpView{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java);
+
         ((TextView)findViewById(R.id.content_txt)).setText(studentModel.name);
 //        javaPresenter.attachView(this);
 //        javaPresenter.requestData();
