@@ -7,14 +7,19 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.liulei.drrm.model.StudentModel
 import com.example.liulei.drrm.presenter.MainPresenter
 import com.example.liulei.drrm.view.MainMvpView
+import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() , MainMvpView {
 
     @Inject
     lateinit var mPresenter:MainPresenter
+
+    @Inject
+    lateinit var student : StudentModel
 
     companion object {
         fun goToPage(context: Context){
@@ -27,8 +32,9 @@ class MainActivity : AppCompatActivity() , MainMvpView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        mPresenter.attachView(this)
-        mPresenter.requestData()
+        textView.text = student.name
+//        mPresenter.attachView(this)
+//        mPresenter.requestData()
     }
 
 
