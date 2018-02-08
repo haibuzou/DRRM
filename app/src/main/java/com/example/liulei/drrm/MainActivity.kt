@@ -27,24 +27,10 @@ class MainActivity : AppCompatActivity() , MainMvpView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//        mPresenter.attachView(this)
-//        mPresenter.requestData()
+        mPresenter.attachView(this)
+        mPresenter.requestData()
     }
 
-    fun click(view: View){
-        goToPage(this)
-        goToPage(this)
-        goToPage(this)
-        goToPage(this)
-        goToPage(this)
-        goToPage(this)
-        goToPage(this)
-        goToPage(this)
-        goToPage(this)
-        goToPage(this)
-
-
-    }
 
     override fun toastMsg(msg: String) {
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
