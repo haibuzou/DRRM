@@ -1,8 +1,11 @@
 package com.example.liulei.drrm.module
 
+import dagger.Module
+
 /**
- * Created by liulei on 2017/12/27.
+ * @Module 依赖
  */
-class MainModule {
+
+@Module class MainModule {
 
 }
