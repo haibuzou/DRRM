@@ -13,15 +13,15 @@
             android:name=".MainActivity"
             android:launchMode="singleTop" >
 
-
-
-        </activity>
-        <activity android:name=".JavaActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+        </activity>
+        <activity android:name=".JavaActivity">
+
+
 
         </activity>
     </application>

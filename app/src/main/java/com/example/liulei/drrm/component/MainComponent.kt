@@ -4,7 +4,7 @@ import com.example.liulei.drrm.MainActivity
 import com.example.liulei.drrm.module.MainModule
 import dagger.Component
 
-@Component(modules = arrayOf(MainModule::class))
+@Component
 interface MainComponent{
     fun inject(mainActivity: MainActivity)
 }
